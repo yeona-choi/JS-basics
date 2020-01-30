@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: pink;
+    color: white;
+    font-family: Menlo;
+}
+
+.controls {
+    position: fixed;
+    text-align: center;
+    top: 1em;
+    /* em : 부모에 지정된 사이즈를 기준으로 1em */
+    width: 100%;
+}
+
+.button {
+    color: white;
+    font-size: 4vw;
+    /* vw : 창전체의 width값을 기준으로 100분의 1 크기가 1vw */
+    margin: 0 0.5em;
+    text-decoration: none;
+}
+
+.button:first-child {
+    margin-left: 0;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
+
+.button:hover {
+    color: black;
+}
+
+.stopwatch {
+    font-size: 20vw;
+    height: 100%;
+    line-height: 100vh;
+    /* vh : 창전체의 height값을 기준으로 100분의 1 크기가 1vh */
+    text-align: center;
+    color: blue;
+}
+
+.results {
+    border-color: lime;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+}
